@@ -1,0 +1,40 @@
+1. In conclusion, the three main types of errors in Java are syntax errors, runtime errors, and logical errors. Syntax errors occur when there is a mistake in the code structure, runtime errors occur during the execution of the program, and logical errors occur when the program does not produce the expected result.
+
+2. An unwanted/expected event that disturbs the normal flow of execution of a program is called "Exception
+handling"
+ The main objective of Exception handling is to handle the exception
+ It is available for graceful termination of program.
+
+3. Exception handling can be performed using:
+Try: the det of statements or code which required monitoring for an exception id kept under this block.
+Catch: this block catches all exceptions that were trapped in the try block.
+Finally: this block id always performed irrespective of the catching of exceptions in the try or catch block.
+class Launch
+{
+public static void main(String args[])
+{
+try
+{
+System.out.print("Hello" + " " + 1 / 0);
+}
+catch(ArithmeticException e)
+{
+System.out.print("world");
+}
+}
+}
+
+4. If there id no try and catch block while an exception occurs, the program will terminate Exception handling
+ensures the smooth running of a program without program termination.
+
+5. Errors typically happen while an application id running For instance, Out of Memory Error occurs in cade
+the JVM runs out of memory On the other hand, exceptions are mainly caused by the application For instance,
+Null Pointer Exception happens when an app tried to get through a null object.
+
+6. Based on handling by JVM, there are typically two types of exceptions in Java:
+Checked: Occur during the compilation. Here, the compiler checks whether the exception is handled and
+throws an error accordingly.
+Unchecked: Occur during program execution. These are not detectable during the compilation process.
+
+7. No, doing so will show a compilation error. Catch or finally block must always accompany try block. We
+can remove either finally block or catch block, but never both.
